@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Xin chao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <TextView
+        android:id="@+id/textViewColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Color"
+        android:textColor="#757575"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/textViewSize"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@color/black"
+        android:backgroundTint="#fc0362"
+        android:gravity="center"
+        android:text="Size"
+        android:textColor="#757575"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random"
+        app:layout_constraintTop_toBottomOf="@id/textViewColor"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="83dp" />
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintTop_toBottomOf="@id/textViewColor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button"
+        app:layout_constraintStart_toEndOf="@id/button"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
